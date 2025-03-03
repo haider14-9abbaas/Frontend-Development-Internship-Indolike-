@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+          <!-- Sidebar Toggle Button (Always Visible) -->
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+            <i class="fab fa-youtube text-danger"></i> YouTube
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex ms-auto" role="search">
+                <input id="searchInput" class="form-control me-2 search-input" type="search" placeholder="Search videos...">
+                <button class="btn btn-outline-danger" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        
+        <div class="d-flex">
+            <a href="#" class="text-dark mx-3"><i class="fas fa-video"></i></a>
+            <a href="#" class="text-dark mx-3"><i class="fas fa-bell"></i></a>
+            <a href="#" class="text-dark mx-3"><i class="fas fa-user-circle"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- Sidebar -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- First Section -->
+        <ul class="list-unstyled">
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-home me-3"></i> Home
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-fire me-3"></i> Shorts
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-bell me-3"></i> Subscriptions
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <!-- Second Section -->
+        <ul class="list-unstyled">
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-bookmark me-3"></i> Library
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-history me-3"></i> History
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-play-circle me-3"></i> Your Videos
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-clock me-3"></i> Watch Later
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-thumbs-up me-3"></i> Liked Videos
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <!-- Third Section -->
+        <h6 class="text-muted mb-3">Subscriptions</h6>
+        <ul class="list-unstyled">
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <img src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle me-3" alt="Channel 1">
+                    Design Matters
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29ufGVufDB8fDB8fHww" class="rounded-circle me-3" alt="Channel 2">
+                    freeCodeCamp
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww" class="rounded-circle me-3" alt="Channel 3">
+                    Academind
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fHww" class="rounded-circle me-3" alt="Channel 4">
+                    kevinpowel
+                </a>
+            </li>
+        </ul>
+
+        <hr>
+        <!-- Fourth Section -->
+        <h6 class="text-muted mb-3">Explore</h6>
+        <ul class="list-unstyled">
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-chart-line me-3"></i> Trending
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-music me-3"></i> Music
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-gamepad me-3"></i> Gaming
+                </a>
+            </li>
+            <li class="mb-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <i class="fas fa-football-ball me-3"></i> Sports
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <!-- Filter Bar -->
+    <div class="filter-bar bg-light py-2 border-bottom">
+        <div class="container-fluid">
+            <div class="d-flex overflow-auto">
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">All</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">Music</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">Gaming</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">News</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">Live</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">Podcasts</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">Cooking</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">Recently Uploaded</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">Watched</a>
+                <a href="#" class="text-decoration-none text-dark px-3 py-1">New to You</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Sidebar Content (Same as Before) -->
+        </div>
+    </div>
+
+    <!-- Video Grid -->
+    <div class="container-fluid mt-4">
+        <div class="row" id="videoGrid">
+            <!-- Video Cards will be generated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light mt-5 py-4">
+        <div class="container">
+            <div class="footer-links text-center mb-3">
+                <a href="#" class="text-secondary me-3">About</a>
+                <a href="#" class="text-secondary me-3">Press</a>
+                <a href="#" class="text-secondary me-3">Copyright</a>
+                <a href="#" class="text-secondary me-3">Contact us</a>
+                <a href="#" class="text-secondary me-3">Creators</a>
+                <a href="#" class="text-secondary me-3">Advertise</a>
+                <a href="#" class="text-secondary">Developers</a>
+            </div>
+            
+            <div class="developer-credit text-center">
+                <p class="text-muted mb-2"><strong>Developed by Syed Haider Abbas Zaidi</strong></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/syed-haider-abbas-zaidi-132525215/" target="_blank" class="text-secondary me-3">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/haider14-9abbaas" target="_blank" class="text-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+.search-input:focus {
+    border-color: #ff4b4b;
+    box-shadow: 0 0 0 2px rgba(255, 75, 75, 0.2);
+}
+
+.btn-outline-danger {
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+.video-card {
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnail Container */
+.thumbnail-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Video Duration Overlay */
+.video-duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Profile Picture Styling */
+.rounded-circle {
+    border: 2px solid #ddd;
+    object-fit: cover;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+}
+
+.footer-links a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff4b4b !important;
+}
+
+.social-icons a {
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff4b4b !important;
+}
+/* Sidebar Styles */
+.offcanvas {
+    width: 250px; /* Set sidebar width */
+}
+
+.offcanvas-body {
+    padding: 0;
+}
+
+.offcanvas-body ul {
+    padding-left: 1rem;
+}
+
+.offcanvas-body hr {
+    margin: 0.5rem 0;
+}
+
+/* Sidebar Links */
+.offcanvas-body a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.offcanvas-body a:hover {
+    background-color: #f8f9fa;
+}
+
+/* Always Show Toggle Button */
+.navbar-toggler {
+    display: block !important; /* Force the toggle button to always show */
+}
+
+/* Adjust Navbar for Larger Screens */
+@media (min-width: 992px) {
+    .navbar-toggler {
+        margin-right: 1rem; /* Add spacing for larger screens */
+    }
+}
+/* Filter Bar Styles */
+.filter-bar {
+    white-space: nowrap; /* Prevent wrapping of filter items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.filter-bar a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.filter-bar a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Ensure Search Bar is Visible on Mobile */
+@media (max-width: 768px) {
+    .navbar .form-control {
+        width: auto; /* Allow search bar to shrink */
+        flex-grow: 1; /* Take remaining space */
+    }
+
+    .navbar .btn {
+        flex-shrink: 0; /* Prevent search button from shrinking */
+    }
+}
+
+/* Sidebar Styles (Same as Before) */
+.offcanvas {
+    width: 250px;
+}
+
+.offcanvas-body {
+    padding: 0;
+}
+
+.offcanvas-body ul {
+    padding-left: 1rem;
+}
+
+.offcanvas-body hr {
+    margin: 0.5rem 0;
+}
+
+.offcanvas-body a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.offcanvas-body a:hover {
+    background-color: #f8f9fa;
+}
+
+/* Always Show Toggle Button */
+.navbar-toggler {
+    display: block !important;
+}
+
+/* Adjust Navbar for Larger Screens */
+@media (min-width: 992px) {
+    .navbar-toggler {
+        margin-right: 1rem;
+    }
+}
+/* Profile Picture Styles */
+.offcanvas-body img.rounded-circle {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Align Profile Pictures with Text */
+.offcanvas-body a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.offcanvas-body a:hover {
+    background-color: #f8f9fa;
+}
